@@ -1,2 +1,8 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'home') %>
+<!DOCTYPE html>
+<html>
+<head><title>ddd<% yield(:title) %></title></head>
+<body>
+Sample home page2<%= full_title(yield(:title)) %>
+</body>
+</html>
